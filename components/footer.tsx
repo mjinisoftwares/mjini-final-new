@@ -128,10 +128,7 @@ fill={"currentColor"} viewBox="0 0 24 24">
             />
             <Button size="sm">Subscribe</Button>
           </div>
-          <p className="text-muted-foreground text-sm mt-2">
-            Get updates on new services & offers from <br></br>
-            <span className="text-primary">Mjini Digital</span> <br /> <a href="https://www.mjinidigital.co.ke/">The best website developers in Nairobi</a>
-          </p>
+          Our Address: Westlands Rd, Nairobi
         </div>
       </div>
 
