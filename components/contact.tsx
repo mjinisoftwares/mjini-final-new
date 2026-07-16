@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -8,6 +11,22 @@ import Link from 'next/link'
 import { Mail, Phone } from 'lucide-react'
 
 export default function ContactSection() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [country, setCountry] = useState('')
+    const [website, setWebsite] = useState('')
+    const [job, setJob] = useState('')
+    const [msg, setMsg] = useState('')
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault()
+        
+        const message = `*New Inquiry*\n\n*Name:* ${name}\n*Email:* ${email}\n*Country:* ${country}\n*Website:* ${website}\n*Job Function:* ${job}\n*Message:*\n${msg}`
+        
+        const whatsappUrl = `https://wa.me/254729396862?text=${encodeURIComponent(message)}`
+        window.open(whatsappUrl, '_blank')
+    }
+
     return (
         <section className="py-32">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 lg:px-20">
@@ -46,7 +65,7 @@ export default function ContactSection() {
 
                 <div className="h-3 border-x bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_6px)]"></div>
                 <form
-                    action=""
+                    onSubmit={handleSubmit}
                     className="border px-4 py-12 lg:px-0 lg:py-24">
                     <Card className="mx-auto max-w-lg p-8 sm:p-16">
                         <h3 className="text-xl font-semibold">Let&apos;s get you to the right place</h3>
@@ -59,6 +78,8 @@ export default function ContactSection() {
                                     type="text"
                                     id="name"
                                     required
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </div>
                             <div className="space-y-3">
@@ -67,11 +88,13 @@ export default function ContactSection() {
                                     type="email"
                                     id="email"
                                     required
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <div className="space-y-3">
                                 <Label htmlFor="country">Country/Region</Label>
-                                <Select>
+                                <Select value={country} onValueChange={setCountry}>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select a country" />
                                     </SelectTrigger>
@@ -91,11 +114,13 @@ export default function ContactSection() {
                                 <Input
                                     type="url"
                                     id="website"
+                                    value={website}
+                                    onChange={(e) => setWebsite(e.target.value)}
                                 />
                             </div>
                             <div className="space-y-3">
                                 <Label htmlFor="job">Job function</Label>
-                                <Select>
+                                <Select value={job} onValueChange={setJob}>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select a job function" />
                                     </SelectTrigger>
@@ -114,6 +139,8 @@ export default function ContactSection() {
                                 <Textarea
                                     id="msg"
                                     rows={3}
+                                    value={msg}
+                                    onChange={(e) => setMsg(e.target.value)}
                                 />
                             </div>
                             <Button type="submit" className="w-full">Submit</Button>

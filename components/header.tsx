@@ -261,25 +261,17 @@ export const HeroHeader = () => {
                     </li>
                   ))}
                 </ul>
+              
               </div>
 
               {/* Buttons */}
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className={cn(isScrolled && 'lg:hidden')}
-                >
-                  <Link href="#">Login</Link>
+                 <ModeToggle />
+                <Button asChild size="lg" className={cn(isScrolled && 'lg:hidden')}>
+                  <Link href="/contact">Contact Us</Link>
                 </Button>
-                <Button asChild size="sm" className={cn(isScrolled && 'lg:hidden')}>
-                  <Link href="#">Sign Up</Link>
-                </Button>
-                <Button asChild size="sm" className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                  <Link href="#">Get Started</Link>
-                </Button>
-                <ModeToggle />
+                
+               
               </div>
             </div>
           </div>
