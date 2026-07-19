@@ -18,15 +18,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Website Developers in Nairobi | Mjini Digital | Nairobi's Top Web Developers",
+    default: "Website Developers in Nairobi | Web Design in Nairobi | Nairobi's Top Web Developers",
     template: "%s | Mjini Digital"
   },
   description: "Nairobi's leading web developers, building modern, powerful websites & apps that drive growth. We build websites that rank #1 on Google, Bing, and AI Chatbots.",
   keywords: [
     "web development Nairobi",
     "website developers Kenya",
-    "Nairobi web developers",
-    "web design Nairobi",
+    "Web developers in Nairobi",
+    "Web designers in Nairobi",
+    "Web Design Company in Nairobi",
+    "Web development company in Nairobi",
+    "Web Design Company Nairobi",
+    "Web development company in Nairobi",
     "custom web applications Nairobi",
     "custom web applications Kenya",
     "SEO optimization services Nairobi",
@@ -56,7 +60,7 @@ export const metadata: Metadata = {
     locale: 'en_KE',
     url: 'https://mjinidigital.co.ke',
     siteName: 'Mjini Digital',
-    title: "Website Developers in Nairobi | Mjini Digital | Nairobi's Top Web Developers",
+    title: "Website Developers in Nairobi | Web Design in Nairobi | Nairobi's Top Web Developers",
     description: "Nairobi's leading web developers, building modern, powerful websites and applications that drive business growth in the digital era.",
     images: [
       {
@@ -69,7 +73,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Website Developers in Nairobi | Mjini Digital",
+    title: "Website Developers in Nairobi | Web Design in Nairobi | Nairobi's Top Web Developers",
     description: "Nairobi's leading web developers, building modern, powerful websites and applications.",
     images: ['/og-image.webp'],
     creator: '@mjinidigital',
