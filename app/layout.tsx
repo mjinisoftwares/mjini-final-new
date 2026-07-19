@@ -21,20 +21,29 @@ export const metadata: Metadata = {
     default: "Website Developers in Nairobi | Mjini Digital | Nairobi's Top Web Developers",
     template: "%s | Mjini Digital"
   },
-  description: "Nairobi's leading web developers, building modern, powerful websites and applications that drive business growth in the digital era. We are proudly ranked as the #1 web development agency in Nairobi",
+  description: "Nairobi's leading web developers, building modern, powerful websites & apps that drive growth. We build websites that rank #1 on Google, Bing, and AI Chatbots.",
   keywords: [
     "web development Nairobi",
     "website developers Kenya",
     "Nairobi web developers",
     "web design Nairobi",
-    "custom web applications",
-    "responsive web design",
-    "e-commerce websites",
-    "SEO optimization Nairobi",
+    "custom web applications Nairobi",
+    "custom web applications Kenya",
+    "SEO optimization services Nairobi",
+    "SEO optimization services Kenya",
+    "AI Chatbot optimization Nairobi",
+    "AI Chatbot optimization Kenya",
+    "Bing Optimization Nairobi",
+    "Google Business Profile Optimization Nairobi",
+    "e-commerce websites Nairobi",
+    "web design Kenya",
+    "web development Kenya",
+    "web development company Kenya",
+    "web developers in Nairobi",
     "digital agency Kenya"
   ],
   authors: [{ name: "Mjini Digital" }],
-  creator: "Mjini Digital",
+  creator: "Mjini Digital",  
   publisher: "Mjini Digital",
   formatDetection: {
     email: false,
@@ -51,7 +60,7 @@ export const metadata: Metadata = {
     description: "Nairobi's leading web developers, building modern, powerful websites and applications that drive business growth in the digital era.",
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.webp',
         width: 1200,
         height: 630,
         alt: 'Mjini Digital - Web Developers in Nairobi',
@@ -62,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Website Developers in Nairobi | Mjini Digital",
     description: "Nairobi's leading web developers, building modern, powerful websites and applications.",
-    images: ['/og-image.png'],
+    images: ['/og-image.webp'],
     creator: '@mjinidigital',
   },
   robots: {
