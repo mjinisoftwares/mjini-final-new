@@ -13,6 +13,7 @@ import Pricing from "@/components/pricing";
 import Projects from "@/components/Projects";
 import GoogleReviews from "@/components/Reviews";
 import Services from "@/components/Services";
+import TeamSection from "@/components/team";
 import Websites from "@/components/websites";
 import WhyChooseUs from "@/components/WhyUs";
 import { Metadata } from "next";
@@ -51,7 +52,8 @@ export default function Home() {
    />
    <HeroSectionOne/> 
    <LogoCloud />
-   <AboutSection/> 
+   <AboutSection/>
+   <TeamSection  /> 
    <Projects/>
    <Services/>
    <Pricing/>

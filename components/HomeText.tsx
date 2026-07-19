@@ -29,7 +29,7 @@ export default function HomeTextSEO() {
       </div>
 
       {/* Tabs */}
-      <div className="mx-auto bg-backround rounded-xl shadow-lg p-8 mb-8 max-w-5xl">
+      <div className="mx-auto bg-backround dark:bg-backround rounded-xl shadow-lg p-8 mb-8 max-w-5xl">
         <div className="flex flex-wrap gap-2 mb-6 border-b pb-4">
           {[
             { id: "ai", label: "AI & Modern Development" },
@@ -41,10 +41,10 @@ export default function HomeTextSEO() {
           ].map((tab) => (
             <button
               key={tab.id}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors text-sm ${
                 activeTab === tab.id
                   ? "bg-primary text-white"
-                  : "bg-gray-200  hover:bg-gray-300"
+                  : "bg-gray-200 text-black  hover:bg-gray-300"
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
