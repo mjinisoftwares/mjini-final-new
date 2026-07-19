@@ -53,7 +53,7 @@ const teamMembers = [
       "SEO",    
      "Copy Writing"
     ],
-    image: "/Brian.webp",
+    image: "/brayo.jpeg",
     social: {
       facebook: "https://www.facebook.com/brian.maina.90",
       instagram: "https://www.instagram.com/mrbrianmaina/",
