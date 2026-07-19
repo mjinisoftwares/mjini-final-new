@@ -6,7 +6,6 @@ import { HeroHeader } from "@/components/header";
 import FooterSection from "@/components/footer";
 import GoogleMap from "@/components/Maps";
 import Script from "next/script";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -119,11 +118,8 @@ export default function RootLayout({
         <GoogleMap />
         <FooterSection />
         </ThemeProvider>
-            <Script
-          src="https://elfsightcdn.com/platform.js"
-          strategy="lazyOnload"
-        />
-
+          
+        <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
       </body>
     </html>
   );

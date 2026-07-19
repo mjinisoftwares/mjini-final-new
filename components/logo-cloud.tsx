@@ -76,7 +76,7 @@ const logos = [
     link: "https://nextjs.org/",
   },
   {
-    src: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+    src: "/react-logo.svg",
     alt: "React Logo",
     name: "React",
     link: "https://react.dev/",
@@ -116,7 +116,7 @@ const logos = [
   },
 
   {
-    src: "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
+    src: "/PostgreSQL.png",
     alt: "PostgreSQL Logo",
     name: "PostgreSQL",
     link: "https://www.postgresql.org/",

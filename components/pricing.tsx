@@ -7,7 +7,7 @@ import { Check } from 'lucide-react'
 export const PRICING_PLANS = [
   {
     title: "Landing Page",
-    price: "Ksh. 15,000",
+    price: "Ksh. 20,000",
     description: "Perfect for startups & personal brands",
     features: [
       "1 Page Website Design & Development",
@@ -27,7 +27,7 @@ export const PRICING_PLANS = [
   },
   {
     title: "Static Website",
-    price: "Ksh. 25,000",
+    price: "Ksh. 30,000",
     description: "Best for small businesses & service brands",
     features: [
       "Up to 5 Custom Pages (Home, About, Services, Contact)",
@@ -47,7 +47,7 @@ export const PRICING_PLANS = [
   },
   {
     title: "Dynamic Website",
-    price: "Ksh. 40,000",
+    price: "Ksh. 50,000",
     description: "Blogs, CMS & Editable Websites",
     features: [
       "Integrated Blog / CMS Dashboard",
@@ -107,6 +107,124 @@ export const PRICING_PLANS = [
   },
 ]
 
+// ✅ SEO Pricing plans
+export const SEO_PLANS = [
+  {
+    title: "Starter SEO",
+    price: "Ksh. 20,000",
+    period: "/mo",
+    description: "Ideal for local businesses getting started.",
+    features: [
+      "Up to 5 Highly Competitive Keywords",
+      "On-Page SEO Optimization",
+      "Google My Business Setup",
+      "Basic Competitor Analysis",
+      "Monthly Progress Report",
+      "Ai Overview Optimization",
+      "Top Ranking on Google Search Engines",
+      "Top Ranking on Bing Search Engines",
+      "Top Ranking on AI Chatbots",
+      
+    ],
+    highlight: false,
+  },
+  {
+    title: "Growth SEO",
+    price: "Ksh. 35,000",
+    period: "/mo",
+    description: "Great for growing brands aiming for higher traffic.",
+    features: [
+      "Up to 10 Highly Competitive Keywords",
+      "On-Page & Off-Page SEO",
+      "Technical SEO Audit & Fixes",
+      "Advanced Google My Business Optimization",
+      "Content Strategy & Link Building",
+      "Bi-Weekly Analytics Reports",
+      "Ai Overview Optimization",
+      "Top Ranking on Google Search Engines",
+      "Top Ranking on Bing Search Engines",
+      "Top Ranking on AI Chatbots",
+      "Ai Overview Optimization",
+      "Top Ranking on Google Search Engines",
+      "Top Ranking on Bing Search Engines",
+      "Top Ranking on AI Chatbots",
+    ],
+    highlight: true,
+  },
+  {
+    title: "Dominator SEO",
+    price: "Ksh. 50,000",
+    period: "/mo",
+    description: "Dominating search results with aggressive strategies.",
+    features: [
+      "Up to 20+ Highly Competitive Keywords",
+      "Advanced Technical & Local SEO",
+      "High-Quality Link Building",
+      "Competitor Analysis",
+      "Advanced Google My Business Optimization",
+      "Advanced Content Strategy & Link Building",
+      "Conversion Rate Optimization (CRO)",
+      "Weekly Reports & Strategy Calls",
+      "Ai Overview Optimization",
+      "Top Ranking on Google Search Engines",
+      "Top Ranking on Bing Search Engines",
+      "Top Ranking on AI Chatbots",
+      "Ai Overview Optimization",
+      "Top Ranking on Google Search Engines",
+      "Top Ranking on Bing Search Engines",
+      "Top Ranking on AI Chatbots",
+    ],
+    highlight: false,
+  },
+]
+
+// ✅ Maintenance Pricing plans
+export const MAINTENANCE_PLANS = [
+  {
+    title: "Basic Care",
+    price: "Ksh. 2,500",
+    period: "/mo",
+    description: "Essential upkeep for small websites and blogs.",
+    features: [
+      "Core & Plugin Updates",
+      "Daily Cloud Backups",
+      "Basic Security Monitoring",
+      "1 Hour Content Updates",
+      "Email Support",
+      
+    ],
+    highlight: false,
+  },
+  {
+    title: "Pro Maintenance",
+    price: "Ksh. 5,000",
+    period: "/mo",
+    description: "Comprehensive support for growing businesses.",
+    features: [
+      "Everything in Basic Care",
+      "24/7 Uptime Monitoring",
+      "Speed & Performance Optimization",
+      "3 Hours Content Updates",
+      "Monthly Analytics Report",
+    ],
+    highlight: true,
+  },
+  {
+    title: "Enterprise Care",
+    price: "Ksh. 10,000",
+    period: "/mo",
+    description: "Premium support for mission-critical platforms.",
+    features: [
+      "Everything in Pro Maintenance",
+      "Advanced Security Firewalls",
+      "Unlimited Content Updates",
+      "Custom Feature Additions",
+      "Priority 24/7 Support",
+    ],
+    highlight: false,
+  },
+]
+
 // ✅ Pricing component
 export default function Pricing() {
   return (
@@ -120,48 +238,158 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="mt-10 grid gap-6 md:mt-20 md:grid-cols-3">
-          {PRICING_PLANS.map((plan, index) => (
-            <Card
-              key={index}
-              className={`flex p-4 flex-col relative transition-all hover:shadow-lg ${
-                plan.highlight ? 'border-primary/50 shadow-lg ring-1 ring-primary/20' : ''
-              }`}
-            >
-              {/* Highlight Badge */}
-              {plan.highlight && (
-                <span className="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-orange-500 px-3 py-1 text-xs font-medium text-white shadow-md">
-                  Most Popular
-                </span>
-              )}
+        {/* Web Design Pricing Cards */}
+        <div className="mt-16 space-y-6">
+          <div className="text-left md:text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl font-bold">Web Development Packages</h2>
+            <p className="text-muted-foreground mt-2 text-sm">One-time payment for your website design and development.</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {PRICING_PLANS.map((plan, index) => (
+              <Card
+                key={index}
+                className={`flex p-4 flex-col relative transition-all hover:shadow-lg ${
+                  plan.highlight ? 'border-primary/50 shadow-lg ring-1 ring-primary/20' : ''
+                }`}
+              >
+                {/* Highlight Badge */}
+                {plan.highlight && (
+                  <span className="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-orange-500 px-3 py-1 text-xs font-medium text-white shadow-md">
+                    Most Popular
+                  </span>
+                )}
 
-              <CardHeader>
-                <CardTitle className="mt-8 font-semibold text-2xl text-secondary-foreground/90">{plan.title}</CardTitle>
-                <hr />
-                <span className="my-2 block text-xl font-bold text-primary">{plan.price} /=</span>
-                <CardDescription className="text-sm font-semibold text-secondary-foreground/80">{plan.description}</CardDescription>
-              </CardHeader>
+                <CardHeader>
+                  <CardTitle className="mt-8 font-semibold text-2xl text-secondary-foreground/90">{plan.title}</CardTitle>
+                  <hr />
+                  <span className="my-2 block text-xl font-bold text-primary">{plan.price} /=</span>
+                  <CardDescription className="text-sm font-semibold text-secondary-foreground/80">{plan.description}</CardDescription>
+                </CardHeader>
 
-              <CardContent className="space-y-2">
-                <hr className="border-dashed" />
-                <ul className="space-y-2 text-sm">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-4">
-                      <Check className="size-4 text-green-500" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
+                <CardContent className="space-y-2">
+                  <hr className="border-dashed" />
+                  <ul className="space-y-2 text-sm">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-4">
+                        <Check className="size-4 text-green-500" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
 
-              <CardFooter className="mt-auto">
-                <Button asChild variant={plan.highlight ? 'default' : 'outline'} className="w-full">
-                  <Link href="/contact">Start Project</Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+                <CardFooter className="mt-auto">
+                  <Button asChild variant={plan.highlight ? 'default' : 'outline'} className="w-full">
+                    <Link href="/contact">Start Project</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* SEO Pricing Cards */}
+        <div className="mt-20 space-y-6">
+          <div className="text-left md:text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl font-bold">SEO & Optimization Packages</h2>
+            <p className="text-muted-foreground mt-2 text-sm">Monthly retainers based on the number of optimized keywords.</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {SEO_PLANS.map((plan, index) => (
+              <Card
+                key={index}
+                className={`flex p-4 flex-col relative transition-all hover:shadow-lg ${
+                  plan.highlight ? 'border-primary/50 shadow-lg ring-1 ring-primary/20' : ''
+                }`}
+              >
+                {/* Highlight Badge */}
+                {plan.highlight && (
+                  <span className="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-orange-500 px-3 py-1 text-xs font-medium text-white shadow-md">
+                    Most Popular
+                  </span>
+                )}
+
+                <CardHeader>
+                  <CardTitle className="mt-8 font-semibold text-2xl text-secondary-foreground/90">{plan.title}</CardTitle>
+                  <hr />
+                  <span className="my-2 flex items-baseline gap-1 text-xl font-bold text-primary">
+                    {plan.price} <span className="text-sm font-normal text-muted-foreground">{plan.period}</span>
+                  </span>
+                  <CardDescription className="text-sm font-semibold text-secondary-foreground/80">{plan.description}</CardDescription>
+                </CardHeader>
+
+                <CardContent className="space-y-2">
+                  <hr className="border-dashed" />
+                  <ul className="space-y-2 text-sm">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-4">
+                        <Check className="size-4 text-green-500" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+
+                <CardFooter className="mt-auto">
+                  <Button asChild variant={plan.highlight ? 'default' : 'outline'} className="w-full">
+                    <Link href="/contact">Start SEO Plan</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Maintenance Pricing Cards */}
+        <div className="mt-20 space-y-6">
+          <div className="text-left md:text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl font-bold">Website Maintenance Packages</h2>
+            <p className="text-muted-foreground mt-2 text-sm">Keep your website secure, fast, and up-to-date with our monthly care plans.</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {MAINTENANCE_PLANS.map((plan, index) => (
+              <Card
+                key={index}
+                className={`flex p-4 flex-col relative transition-all hover:shadow-lg ${
+                  plan.highlight ? 'border-primary/50 shadow-lg ring-1 ring-primary/20' : ''
+                }`}
+              >
+                {/* Highlight Badge */}
+                {plan.highlight && (
+                  <span className="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-orange-500 px-3 py-1 text-xs font-medium text-white shadow-md">
+                    Most Popular
+                  </span>
+                )}
+
+                <CardHeader>
+                  <CardTitle className="mt-8 font-semibold text-2xl text-secondary-foreground/90">{plan.title}</CardTitle>
+                  <hr />
+                  <span className="my-2 flex items-baseline gap-1 text-xl font-bold text-primary">
+                    {plan.price} <span className="text-sm font-normal text-muted-foreground">{plan.period}</span>
+                  </span>
+                  <CardDescription className="text-sm font-semibold text-secondary-foreground/80">{plan.description}</CardDescription>
+                </CardHeader>
+
+                <CardContent className="space-y-2">
+                  <hr className="border-dashed" />
+                  <ul className="space-y-2 text-sm">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-4">
+                        <Check className="size-4 text-green-500" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+
+                <CardFooter className="mt-auto">
+                  <Button asChild variant={plan.highlight ? 'default' : 'outline'} className="w-full">
+                    <Link href="/contact">Select Plan</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>

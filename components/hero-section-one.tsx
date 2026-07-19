@@ -32,7 +32,7 @@
 
     return (
         <main className="overflow-hidden bg-background">
-        <section className="relative mt-12">
+        <section className="relative mt-12 z-10">
             {/* Background */}
             <div className="absolute inset-0 -z-10 overflow-hidden">
             <div className="absolute left-0 top-0  rounded-full bg-primary/10 blur-3xl" />

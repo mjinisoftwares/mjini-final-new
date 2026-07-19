@@ -29,11 +29,12 @@ export default function AboutSection() {
               </h3>
                <hr className="my-2 border-t border-border/80" />
               <p className="mt-2 text-base leading-normal text-foreground/80">
-               We are a premier website development agency based in Nairobi, Kenya.
-               We specialize in designing and building fast, powerful & SEO-perfect websites and applications tailored for businesses.
-               Our team is made up of the best website developers in Nairobi.
-               We combine creativity and latest tech to deliver project optimized for performance, visibility, and conversion.
-              </p>
+               Mjini Digital is a top website development agency based in Nairobi, Kenya.
+               We specialize in designing and building fast, powerful & SEO-optimized websites and applications tailored for businesses.
+               We don&apos;t just build websites; we rank them top on <Link href="https://www.google.com" className="text-primary underline-offset-4 hover:underline transition-all duration-300">Google</Link> and <Link href="https://www.bing.com" className="text-primary underline-offset-4 hover:underline transition-all duration-300">Bing</Link> search engines as well as AI Overviews and Mentions.
+               90% of our clients rank top on Google and Bing search engines as well as AI Overviews and Mentions within a month. Let us do the same for your business as well.
+               
+                  </p>
             
             </div>
 
@@ -43,21 +44,21 @@ export default function AboutSection() {
                 transition={{ type: "spring", stiffness: 200 }}
               >
                 <Globe2 className="size-4 text-primary" />
-                Custom Website Design & Development
+                Fast & Responsive Website Design & Development
               </motion.li>
               <motion.li
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 200 }}
               >
                 <Search className="size-4 text-primary" />
-                SEO Optimization & Performance Analytics
+              Top Ranking on <Link href="https://www.google.com" className="text-primary underline-offset-4 hover:underline transition-all duration-300">Google</Link> and <Link href="https://www.bing.com" className="text-primary underline-offset-4 hover:underline transition-all duration-300">Bing</Link> Search Engines
               </motion.li>
               <motion.li
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 200 }}
               >
                 <Code className="size-4 text-primary" />
-                Modern Web Applications
+                Fully SEO Optimized Websites that Converts
               </motion.li>
             </ul>
 
