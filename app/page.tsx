@@ -10,6 +10,7 @@ import HomeText from "@/components/HomeText";
 import IntegrationsSection1 from "@/components/integrations-1";
 import LogoCloud from "@/components/logo-cloud";
 import Pricing from "@/components/pricing";
+import Projects from "@/components/Projects";
 import GoogleReviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import Websites from "@/components/websites";
@@ -51,6 +52,7 @@ export default function Home() {
    <HeroSectionOne/> 
    <LogoCloud />
    <AboutSection/> 
+   <Projects/>
    <Services/>
    <Pricing/>
    <GoogleReviews /> 
