@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about";
+import Blog from "@/components/Blog";
 import CallToAction from "@/components/call-to-action";
 import ContactSection from "@/components/contact";
 import ContentSection3 from "@/components/content-3";
@@ -66,6 +67,7 @@ export default function Home() {
    <WhyChooseUs/> 
    <CallToAction/>
    <FAQsThree/> 
+   <Blog />
    <HomeText /> 
    <ContactSection/> 
    </>
