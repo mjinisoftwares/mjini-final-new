@@ -13,7 +13,7 @@ export default function LogoCloud() {
           {/* Title Section */}
           <div className="md:max-w-44 md:border-r md:pr-6 mt-6 md:mb-6">
             <p className="text-end text-lg text-secondary-foreground/90 dark:text-secondary-foreground/90 md:mb-0 md:text-lg font-semibold">
-              Our Website Development Tech Stack
+              Brands & Companies We&apos;ve Worked With
             </p>
           </div>
 
@@ -67,118 +67,42 @@ export default function LogoCloud() {
   );
 }
 
-// ✅ Tech Stack Logos with Links
+// ✅ Companies We've Worked With
 const logos = [
   {
-    src: "/nextjs.jpeg",
-    alt: "Next.js Logo",
-    name: "Next.js",
-    link: "https://nextjs.org/",
+    src: "/joric-builders-logo.jpeg",
+    alt: "Joric Builders",
+    name: "Joric Builders",
+    link: "https://joricbuilders.co.ke/",
   },
   {
-    src: "/react-logo.svg",
-    alt: "React Logo",
-    name: "React",
-    link: "https://react.dev/",
-  },
-  //convex
-  {
-    src: "/convex.svg",
-    alt: "Convex Logo",
-    name: "Convex",
-    link: "https://convex.dev/",
-  },
-
-  {
-    src: "https://cdn.worldvectorlogo.com/logos/strapi-2.svg",
-    alt: "Strapi Logo",
-    name: "Strapi",
-    link: "https://strapi.io/",
+    src: "/Konnect.webp",
+    alt: "Konnected Data Networks",
+    name: "Konnect Data Networks",
+    link: "https://www.konnected.co.ke/",
   },
   {
-    src: "/icons8-supabase.svg",
-    alt: "Supabase Logo",
-    name: "Supabase",
-    link: "https://supabase.com/",
+    src: "/linksys.png",
+    alt: "Linksys ISP Molo",
+    name: "Linksys ISP Molo",
+    link: "https://linksysfiber.ke/",
   },
   {
-    src: "/prisma-svgrepo-com.svg",
-    alt: "Prisma Logo",
-    name: "Prisma",
-    link: "https://www.prisma.io/",
-  },
-  //neon
-  {
-    src: "/neon.jpeg",
-    alt: "Neon Logo",
-    name: "Neon",
-    link: "https://neon.tech/",
-  },
-
-  {
-    src: "/PostgreSQL.png",
-    alt: "PostgreSQL Logo",
-    name: "PostgreSQL",
-    link: "https://www.postgresql.org/",
-  },
-  //openai
-  {
-    src: "/openai-svgrepo-com.svg",
-    alt: "OpenAI Logo",
-    name: "OpenAI",
-    link: "https://openai.com/",
+    src: "/rift-view-logo.png",
+    alt: "Rift View Specialist Center",
+    name: "Rift View Specialist Center",
+    link: "https://riftviewspecialistcentre.co.ke/",
   },
   {
-    src: "/wordpress-svgrepo-com.svg",
-    alt: "WordPress Logo",
-    name: "WordPress",
-    link: "https://wordpress.org/",
+    src: "/the-dentist-ltd-logo.png",
+    alt: "The Dentist LTD",
+    name: "The Dentist LTD",
+    link: "https://www.thedentistltd.co.ke/",
   },
-
-
     {
-    src: "/payload.svg",
-    alt: "Payload CMS Logo",
-    name: "Payload CMS",
-    link: "https://payloadcms.com/",
-  },
-
-
-
-  {
-    src: "https://cdn.worldvectorlogo.com/logos/woocommerce.svg",
-    alt: "WooCommerce Logo",
-    name: "WooCommerce",
-    link: "https://woocommerce.com/",
-  },
-  {
-    src: "https://cdn.worldvectorlogo.com/logos/shopify.svg",
-    alt: "Shopify Logo",
-    name: "Shopify",
-    link: "https://www.shopify.com/",
-  },
-  {
-    src: "https://cdn.worldvectorlogo.com/logos/cloudinary-2.svg",
-    alt: "Cloudinary Logo",
-    name: "Cloudinary",
-    link: "https://cloudinary.com/",
-  },
-  {
-    src: "/figma-svgrepo-com.svg",
-    alt: "Figma Logo",
-    name: "Figma",
-    link: "https://www.figma.com/",
-  },
-  {
-    src: "/neon.jpeg",
-    alt: "Neon Logo",
-    name: "Neon",
-    link: "https://neon.tech/",
-  },
-  {
-    src: "/convex.svg",
-    alt: "Convex Logo",
-    name: "Convex",
-    link: "https://convex.dev/",
+    src: "/ubuntu.png",
+    alt: "Ubuntu Logistics",
+    name: "Ubuntu Logistics",
+    link: "https://www.ubuntulogistics.co.ke/",
   },
 ];
