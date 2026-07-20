@@ -89,7 +89,7 @@ const teamMembers = [
   {
     id: 4,
     name: "Eliud Ndegwa",
-    role: "Business Development Executive",
+    role: "Business Development Lead",
     description:
       "Drives business growth through strategic partnerships, client acquisition, and market expansion.",
     technologies: [
@@ -99,6 +99,28 @@ const teamMembers = [
       "Sales Strategy",
   ],
     image: "/eliud.webp",
+    social: {
+      facebook: "",
+      instagram: "",
+    },
+  },
+
+  {
+    id: 5,
+    name: "Victor Njau",
+    role: "Sales & Marketing Executive",
+    description:
+      "Responsible for building and maintaining customer relations, sales and marketing strategies.",
+    technologies: [
+      "Market Research",
+      "Sales Strategy",
+      "Lead Generation",
+      "Customer Relations",
+      "Social Media Management",
+      "Content Creation",
+      
+  ],
+    image: "/vicky.jpeg",
     social: {
       facebook: "",
       instagram: "",
@@ -144,7 +166,7 @@ export default function TeamSection() {
           md:text-5xl
           leading-tight
           ">
-            Meet The Leadership Team
+            Meet The Team Behind Mjini Digital
           </h2>
 
 
@@ -154,7 +176,7 @@ export default function TeamSection() {
           leading-relaxed 
           text-muted-foreground
           ">
-          Introducing the dynamic leaders driving Mjini Digital’s success. Our team combines deep technical expertise with strategic business vision to deliver exceptional results for our clients.
+          Introducing the dynamic team driving Mjini Digital’s success. Our team combines deep technical expertise with strategic business vision to deliver exceptional results for our clients.
           </p>
 
         </div>
