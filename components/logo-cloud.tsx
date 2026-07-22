@@ -19,7 +19,7 @@ export default function LogoCloud() {
 
           {/* Logos Section */}
           <div className="relative py-4 md:w-[calc(100%-11rem)]">
-            <InfiniteSlider speedOnHover={20} speed={40} gap={80}>
+            <InfiniteSlider speedOnHover={40} speed={80} gap={80}>
               {logos.map((logo, index) => (
                 <Link
                   key={index}
@@ -71,38 +71,57 @@ export default function LogoCloud() {
 const logos = [
   {
     src: "/joric-builders-logo.jpeg",
-    alt: "Joric Builders",
+    alt: "Joric Builders Logo",
     name: "Joric Builders",
     link: "https://joricbuilders.co.ke/",
   },
   {
     src: "/Konnect.webp",
-    alt: "Konnected Data Networks",
+    alt: "Konnected Data Networks Logo",
     name: "Konnect Data Networks",
     link: "https://www.konnected.co.ke/",
   },
   {
     src: "/linksys.png",
-    alt: "Linksys ISP Molo",
+    alt: "Linksys ISP Molo Logo",
     name: "Linksys ISP Molo",
     link: "https://linksysfiber.ke/",
   },
   {
     src: "/rift-view-logo.png",
-    alt: "Rift View Specialist Center",
+    alt: "Rift View Specialist Center Logo",
     name: "Rift View Specialist Center",
     link: "https://riftviewspecialistcentre.co.ke/",
   },
   {
     src: "/the-dentist-ltd-logo.png",
-    alt: "The Dentist LTD",
+    alt: "The Dentist LTD Logo",
     name: "The Dentist LTD",
     link: "https://www.thedentistltd.co.ke/",
   },
     {
     src: "/ubuntu.png",
-    alt: "Ubuntu Logistics",
+    alt: "Ubuntu Logistics Logo",
     name: "Ubuntu Logistics",
     link: "https://www.ubuntulogistics.co.ke/",
   },
+    {
+    src: "/eustace-epoxy.png",
+    alt: "Eustace Epoxy Logo",
+    name: "Eustace Epoxy",
+    link: "https://eustacepoxy.com/",
+  },
+
+    {
+    src: "/culture-hub.png",
+    alt: "Culture Hub Logo",
+    name: "Culture Hub",
+    link: "https://www.culturehublive.co.ke/",
+  },
+  {
+    src: "/nairobihomemobilecleaner.png",
+    alt: "Nairobi Home Mobile Cleaners Logo",
+    name: "Nairobi Home Mobile Cleaners",
+    link: "https://nairobihomemobilecleaners.co.ke/",
+  }
 ];
